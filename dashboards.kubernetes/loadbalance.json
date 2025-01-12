@@ -4,7 +4,7 @@
       {
         "builtIn": 1,
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -60,7 +60,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -99,7 +99,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_bandwidth_out_usage{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -145,7 +145,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -184,7 +184,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_bandwidth_in_usage{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -230,7 +230,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -269,7 +269,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_memory_usage{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -315,7 +315,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -354,7 +354,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_directMemory_usage{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -400,7 +400,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -439,7 +439,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_cpu_usage{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -485,7 +485,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -524,7 +524,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_bundles_split_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -570,7 +570,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -609,7 +609,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_unload_bundle_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -655,7 +655,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -694,7 +694,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_lb_unload_broker_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "interval": "",
@@ -740,7 +740,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -779,7 +779,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_topics_count{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}) by (kubernetes_pod_name)",
@@ -826,7 +826,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -865,7 +865,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(caffeine_cache_estimated_size{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",cache=~\"owned-bundles\"}) by (kubernetes_pod_name)",
@@ -938,7 +938,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -977,7 +977,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "100 *  pulsar_lb_resource_usage{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\", feature=\"max_ema\"}",
@@ -1024,7 +1024,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1063,7 +1063,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "100 * pulsar_lb_resource_usage_stats{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\", feature=\"max_ema\", stat=\"avg\"}",
@@ -1110,7 +1110,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1149,7 +1149,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "pulsar_lb_resource_usage_stats{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\", feature=\"max_ema\", stat=\"std\"}",
@@ -1196,7 +1196,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1235,7 +1235,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "pulsar_lb_assign_broker_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Success\"}",
@@ -1282,7 +1282,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1321,7 +1321,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "pulsar_lb_assign_broker_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Skip\"}",
@@ -1368,7 +1368,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1407,7 +1407,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "pulsar_lb_assign_broker_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}",
@@ -1454,7 +1454,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1493,7 +1493,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_unload_broker_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Success\"}) by (reason)",
@@ -1540,7 +1540,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1579,7 +1579,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_unload_broker_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Skip\"}) by (reason)",
@@ -1627,7 +1627,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1666,7 +1666,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_unload_broker_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}) by (reason)",
@@ -1713,7 +1713,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1752,7 +1752,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_bundles_split_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Success\"}) by (reason)",
@@ -1800,7 +1800,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1839,7 +1839,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_bundles_split_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Skip\"}) by (reason)",
@@ -1886,7 +1886,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -1925,7 +1925,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_bundles_split_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}) by (reason)",
@@ -1968,7 +1968,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2041,7 +2041,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_bundles_split_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Success\"}) by (kubernetes_pod_name)",
@@ -2056,7 +2056,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2129,7 +2129,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_bundles_split_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Skip\"}) by (kubernetes_pod_name)",
@@ -2144,7 +2144,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2217,7 +2217,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_lb_bundles_split_breakdown_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}) by (kubernetes_pod_name)",
@@ -2262,7 +2262,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -2301,7 +2301,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_owner_lookup_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Total\"} [1m])) by (kubernetes_pod_name)",
@@ -2344,7 +2344,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2417,7 +2417,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_owner_lookup_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}[1m])) by (kubernetes_pod_name)",
@@ -2432,7 +2432,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2505,7 +2505,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_owner_lookup_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Total\"} [1m])) by (state)",
@@ -2520,7 +2520,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2593,7 +2593,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_owner_lookup_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}[1m])) by (state)",
@@ -2612,7 +2612,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -2651,7 +2651,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_event_publish_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Total\"}[1m])) by (kubernetes_pod_name)",
@@ -2698,7 +2698,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -2737,7 +2737,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_event_publish_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}[1m])) by (kubernetes_pod_name)",
@@ -2780,7 +2780,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2853,7 +2853,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_event_publish_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Total\"} [1m])) by (event)",
@@ -2868,7 +2868,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -2966,7 +2966,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_event_publish_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"} [1m])) by (event)",
@@ -2985,7 +2985,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -3024,7 +3024,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_subscribe_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Total\"} [1m])) by (kubernetes_pod_name)",
@@ -3071,7 +3071,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -3110,7 +3110,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_subscribe_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}[1m] )) by (kubernetes_pod_name)",
@@ -3153,7 +3153,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -3226,7 +3226,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_subscribe_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Total\"}[1m] )) by (event)",
@@ -3241,7 +3241,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -3339,7 +3339,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(increase(pulsar_sunit_state_chn_subscribe_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"}[1m] )) by (event)",
@@ -3358,7 +3358,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -3397,7 +3397,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_sunit_state_chn_inactive_broker_cleanup_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"}) by (result)",
@@ -3444,7 +3444,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -3483,7 +3483,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_sunit_state_chn_su_tombstone_cleanup_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"} ) by (kubernetes_pod_name)",
           "interval": "",
@@ -3529,7 +3529,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -3568,7 +3568,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_sunit_state_chn_orphan_su_cleanup_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"} ) by (kubernetes_pod_name)",
           "interval": "",
@@ -3614,7 +3614,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fill": 1,
       "fillGradient": 0,
@@ -3653,7 +3653,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_sunit_state_chn_cleanup_ops_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\",result=\"Failure\"} ) by (kubernetes_pod_name)",
           "interval": "",
@@ -3695,7 +3695,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -3768,7 +3768,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": false,
           "expr": "sum(pulsar_sunit_state_chn_owned_su_total{cluster=\"$DataSource\",kubernetes_pod_name=~\"$kubernetes_pod_name\"} ) by (kubernetes_pod_name)",
@@ -3816,7 +3816,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -3846,7 +3846,7 @@
           ]
         },
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_lb_memory_usage{cluster=~\"$cluster\", kubernetes_pod_name=~\".+\"}",
         "hide": 0,
@@ -3879,7 +3879,7 @@
           ]
         },
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "caffeine_cache_hit_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
         "hide": 0,

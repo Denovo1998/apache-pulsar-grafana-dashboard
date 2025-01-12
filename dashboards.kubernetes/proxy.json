@@ -5,7 +5,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -30,7 +30,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -72,7 +72,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_proxy_active_connections{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -121,7 +121,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -163,7 +163,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_new_connections{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[30s])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -212,7 +212,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -254,7 +254,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_rejected_connections{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[30s])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -303,7 +303,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -344,7 +344,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_binary_ops{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -391,7 +391,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -432,7 +432,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_binary_ops{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -479,7 +479,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -520,7 +520,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(jetty_requests_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -566,7 +566,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -608,7 +608,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_lookup_requests{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -657,7 +657,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -699,7 +699,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_partitions_metadata_requests{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -748,7 +748,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -790,7 +790,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_get_topics_of_namespace_requests{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -839,7 +839,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -881,7 +881,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_rejected_lookup_requests{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -931,7 +931,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -973,7 +973,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_proxy_rejected_partitions_metadata_requests{cluster=~\"$cluster\", job=~\"proxy\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])) by (kubernetes_pod_name)",
           "format": "time_series",
@@ -1023,7 +1023,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 0,
@@ -1065,7 +1065,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(\n  rate(\n    pulsar_proxy_rejected_get_topics_of_namespace_requests{\n            cluster=~\"$cluster\", job=~\"proxy\", \n            kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m]\n    )\n  ) \nby (kubernetes_pod_name)",
           "format": "time_series",
@@ -1145,7 +1145,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -1176,7 +1176,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,

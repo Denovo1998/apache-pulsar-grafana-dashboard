@@ -6,7 +6,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -30,7 +30,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -77,7 +77,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_rate_in{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -123,7 +123,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "description": "",
@@ -171,7 +171,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_rate_out{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -217,7 +217,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -264,7 +264,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_throughput_in{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -310,7 +310,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -357,7 +357,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_throughput_out{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -403,7 +403,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -450,7 +450,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_topics_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -497,7 +497,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -544,7 +544,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_producers_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)  ",
           "interval": "",
@@ -591,7 +591,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -638,7 +638,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_consumers_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)  ",
           "interval": "",
@@ -685,7 +685,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -732,7 +732,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_msg_backlog{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -791,7 +791,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -842,7 +842,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_0_5{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -851,7 +851,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_1{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -860,7 +860,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_5{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -869,7 +869,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_10{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -878,7 +878,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_20{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -887,7 +887,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_50{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -896,7 +896,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_100{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -905,7 +905,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_200{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -914,7 +914,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_1000{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -923,7 +923,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_overflow{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}) / 60.0",
           "interval": "",
@@ -969,7 +969,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1016,7 +1016,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_broker_publish_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", quantile=\"0.5\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -1062,7 +1062,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "description": "",
@@ -1110,7 +1110,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_broker_publish_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", quantile=\"0.99\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -1156,7 +1156,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "description": "",
@@ -1204,7 +1204,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_broker_publish_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", quantile=\"0.999\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -1250,7 +1250,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "description": "",
@@ -1298,7 +1298,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_broker_publish_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", quantile=\"1.0\"}) by (kubernetes_pod_name)",
           "interval": "",
@@ -1371,7 +1371,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -1418,7 +1418,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "caffeine_cache_estimated_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}",
           "interval": "",
@@ -1464,7 +1464,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -1511,7 +1511,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(caffeine_cache_eviction_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}[1m])",
           "interval": "",
@@ -1557,7 +1557,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "description": "",
       "fieldConfig": {
@@ -1605,7 +1605,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(caffeine_cache_hit_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}[1m])",
           "interval": "",
@@ -1651,7 +1651,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "description": "",
       "fieldConfig": {
@@ -1699,7 +1699,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(caffeine_cache_miss_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}[1m])",
           "interval": "",
@@ -1745,7 +1745,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "description": "",
       "fieldConfig": {
@@ -1793,7 +1793,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(caffeine_cache_loads_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}[1m])",
           "interval": "",
@@ -1839,7 +1839,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "description": "",
       "fieldConfig": {
@@ -1887,7 +1887,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "idelta(caffeine_cache_load_duration_seconds_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}[1m])/idelta(caffeine_cache_load_duration_seconds_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\", cache=~\"$cache\"}[1m])\n",
           "interval": "",
@@ -1962,7 +1962,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -1993,7 +1993,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_rate_in{cluster=~\"$cluster\", kubernetes_pod_name=~\".+\"}",
         "hide": 0,
@@ -2024,7 +2024,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "caffeine_cache_hit_total{cluster=~\"$cluster\", kubernetes_pod_name=~\"$broker\"}",
         "hide": 0,

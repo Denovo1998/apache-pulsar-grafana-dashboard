@@ -6,7 +6,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -30,7 +30,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -78,7 +78,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_rate_in{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic)",
           "format": "time_series",
@@ -129,7 +129,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -178,7 +178,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(  pulsar_subscription_msg_rate_out{      cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"  }) by (cluster, namespace, topic, subscription)",
           "format": "time_series",
@@ -231,7 +231,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -278,7 +278,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_throughput_in{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic)",
           "format": "time_series",
@@ -330,7 +330,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -380,7 +380,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(  pulsar_subscription_msg_throughput_out{    cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"  }) by (cluster, namespace, topic, subscription)",
           "format": "time_series",
@@ -433,7 +433,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 0,
       "fieldConfig": {
@@ -483,7 +483,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_producers_count{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"})",
           "format": "time_series",
@@ -497,7 +497,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_subscriptions_count{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"})",
           "format": "time_series",
@@ -510,7 +510,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_consumers_count{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"})",
           "format": "time_series",
@@ -563,7 +563,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -612,7 +612,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_subscription_back_log{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic, subscription)",
           "format": "time_series",
@@ -665,7 +665,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -714,7 +714,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_subscription_delayed{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic, subscription)",
           "format": "time_series",
@@ -767,7 +767,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 0,
       "fieldConfig": {
@@ -817,7 +817,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_backlog_size{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic)",
           "format": "time_series",
@@ -871,7 +871,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 0,
       "fieldConfig": {
@@ -921,7 +921,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "100*sum(pulsar_storage_backlog_size{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic)/sum(pulsar_storage_backlog_quota_limit{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic)",
           "format": "time_series",
@@ -978,7 +978,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 0,
       "fieldConfig": {
@@ -1028,7 +1028,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_offloaded_size{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, namespace, topic)",
           "format": "time_series",
@@ -1083,7 +1083,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1130,7 +1130,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_replication_rate_in{cluster=~\"$cluster\", namespace=~\"$namespace\", remote_cluster!=\"local\", topic=~\"$topic\"}) by (cluster, remote_cluster)",
           "format": "time_series",
@@ -1182,7 +1182,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1229,7 +1229,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_replication_rate_out{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"})",
           "format": "time_series",
@@ -1281,7 +1281,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1328,7 +1328,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_replication_backlog{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) by (cluster, remote_cluster)",
           "format": "time_series",
@@ -1393,7 +1393,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1445,7 +1445,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_0_5{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1459,7 +1459,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_1{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1473,7 +1473,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_5{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1487,7 +1487,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_10{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1501,7 +1501,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_20{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1515,7 +1515,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_50{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1529,7 +1529,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_100{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1544,7 +1544,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_200{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1557,7 +1557,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_le_1000{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1570,7 +1570,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_latency_overflow{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1620,7 +1620,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1672,7 +1672,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_128{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1686,7 +1686,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_512{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1700,7 +1700,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_1_kb{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1714,7 +1714,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_2_kb{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1728,7 +1728,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_4_kb{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1742,7 +1742,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_16_kb{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1756,7 +1756,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_100_kb{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1770,7 +1770,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_le_1_mb{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1784,7 +1784,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_entry_size_overflow{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"}) / 60.0",
           "format": "time_series",
@@ -1834,7 +1834,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "description": "Rate of writes into storage (can be lower than publish rate, when batching is enabled)",
       "fieldConfig": {
@@ -1882,7 +1882,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_write_rate{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"})",
           "format": "time_series",
@@ -1935,7 +1935,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "description": "Reads from bookies",
       "fieldConfig": {
@@ -1983,7 +1983,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_read_rate{cluster=~\"$cluster\", namespace=~\"$namespace\", topic=~\"$topic\"})",
           "format": "time_series",
@@ -2065,7 +2065,7 @@
 
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -2096,7 +2096,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,
@@ -2127,7 +2127,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,

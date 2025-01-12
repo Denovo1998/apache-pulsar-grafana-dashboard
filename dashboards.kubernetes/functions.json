@@ -5,7 +5,7 @@
         "$$hashKey": "object:95",
         "builtIn": 1,
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -29,7 +29,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -76,7 +76,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_function_received_total{ cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"         }[1m])    )by (cluster, exported_namespace, name)",
           "interval": "",
@@ -123,7 +123,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -170,7 +170,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_function_processed_successfully_total{ cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"         }[1m])    )by (cluster, exported_namespace, name)",
           "interval": "",
@@ -217,7 +217,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -264,7 +264,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(increase(pulsar_function_process_latency_ms_sum{ cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"    }[1m])) by (cluster, exported_namespace, name)/sum(increase(pulsar_function_process_latency_ms_count{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"    }[1m])) by (cluster, exported_namespace, name)",
           "interval": "",
@@ -311,7 +311,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -358,7 +358,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_function_process_latency_ms{    quantile=\"0.99\",    cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"}) by (cluster, exported_namespace, name, instance_id)",
           "interval": "",
@@ -405,7 +405,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -452,7 +452,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "count(pulsar_function_system_exceptions_total{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"         }    )by (cluster, exported_namespace, name)",
           "interval": "",
@@ -499,7 +499,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -546,7 +546,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_function_user_exceptions_total{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"         }[1m])    )by (cluster, exported_namespace, name)",
           "interval": "",
@@ -593,7 +593,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -640,7 +640,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_function_system_exceptions_total{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"         }[1m])    )by (cluster, exported_namespace, name)",
           "interval": "",
@@ -684,7 +684,7 @@
       "columns": [],
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fontSize": "100%",
       "gridPos": {
@@ -763,7 +763,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_function_user_exception{cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"}",
           "format": "table",
@@ -780,7 +780,7 @@
       "columns": [],
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fontSize": "100%",
       "gridPos": {
@@ -859,7 +859,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "pulsar_function_system_exception{cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"}",
           "format": "table",
@@ -905,7 +905,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -951,7 +951,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(increase(pulsar_function_user_metric_sum{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"    }[1m])) by (metric, cluster, exported_namespace, name)/sum(increase(pulsar_function_user_metric_count{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"    }[1m])) by (metric, cluster, exported_namespace, name)",
           "interval": "",
@@ -998,7 +998,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -1044,7 +1044,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_function_user_metric_count{           cluster=~\"$cluster\", exported_namespace=~\"$namespace\", name=~\"$function\"    }[1m])) by (metric, cluster, exported_namespace, name)",
           "interval": "",
@@ -1122,7 +1122,7 @@
 
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -1152,7 +1152,7 @@
           ]
         },
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_function_received_total{exported_namespace=~\".+\", cluster=~\"$cluster\"}",
         "hide": 0,
@@ -1182,7 +1182,7 @@
           ]
         },
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_function_received_total{name=~\".+\", cluster=~\"$cluster\", exported_namespace=~\"$namespace\"}",
         "hide": 0,

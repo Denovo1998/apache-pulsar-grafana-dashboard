@@ -6,7 +6,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -53,7 +53,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -115,7 +115,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "count(bookie_SERVER_STATUS{cloud_streamnative_io_cluster=~\"$cluster\"} == 1)\n   ",
           "format": "time_series",
@@ -131,7 +131,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -193,7 +193,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "count(bookie_SERVER_STATUS{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"} == 0)\n",
           "format": "time_series",
@@ -213,7 +213,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "description": "success rate for different types of requests",
@@ -261,7 +261,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "100 * sum(irate(bookkeeper_server_ADD_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m])) / sum(irate(bookkeeper_server_ADD_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m]))",
           "format": "time_series",
@@ -273,7 +273,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "100 * sum(irate(bookkeeper_server_READ_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m])) / sum(irate(bookkeeper_server_READ_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m]))",
           "format": "time_series",
@@ -321,7 +321,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -368,7 +368,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg(bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.99\"})",
           "format": "time_series",
@@ -380,7 +380,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg(bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.999\"})",
           "format": "time_series",
@@ -391,7 +391,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg(bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.5\"})",
           "format": "time_series",
@@ -402,7 +402,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg(bookkeeper_server_READ_ENTRY_REQUEST{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.99\"})",
           "format": "time_series",
@@ -413,7 +413,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg(bookkeeper_server_READ_ENTRY_REQUEST{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.999\"})",
           "format": "time_series",
@@ -424,7 +424,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg(bookkeeper_server_READ_ENTRY_REQUEST{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.5\"})",
           "format": "time_series",
@@ -468,7 +468,7 @@
     {
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -534,7 +534,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "100 \n* \ncount(bookie_SERVER_STATUS{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"} == 1)\n/\ncount(bookie_SERVER_STATUS{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"})\n   ",
           "format": "time_series",
@@ -554,7 +554,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -601,7 +601,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(bookie_WRITE_BYTES{cloud_streamnative_io_cluster=~\"$cluster\"}[5m]))",
           "format": "time_series",
@@ -613,7 +613,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(bookie_READ_BYTES{cloud_streamnative_io_cluster=~\"$cluster\"}[5m]))",
           "format": "time_series",
@@ -661,7 +661,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -708,7 +708,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookkeeper_server_READ_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m]))",
           "format": "time_series",
@@ -720,7 +720,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookkeeper_server_ADD_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m]))",
           "format": "time_series",
@@ -768,7 +768,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -815,7 +815,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "100 * (1 - (kubelet_volume_stats_available_bytes{persistentvolumeclaim=~\".*ledgers.*\"} /    kubelet_volume_stats_capacity_bytes{persistentvolumeclaim=~\".*ledgers.*\"}))",
           "format": "time_series",
@@ -866,7 +866,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -913,7 +913,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "100 * (1 - (kubelet_volume_stats_available_bytes{persistentvolumeclaim=~\".*journal.*\"} /    kubelet_volume_stats_capacity_bytes{persistentvolumeclaim=~\".*journal.*\"}))",
           "format": "time_series",
@@ -964,7 +964,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1011,7 +1011,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_ledger_dir__pulsar_data_bookkeeper_ledgers_0_usage{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -1088,7 +1088,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1135,7 +1135,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_WRITE_BYTES{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -1184,7 +1184,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1231,7 +1231,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_READ_BYTES{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -1280,7 +1280,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1327,7 +1327,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookkeeper_server_ADD_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -1376,7 +1376,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1423,7 +1423,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookkeeper_server_READ_ENTRY_REQUEST_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -1472,7 +1472,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1519,7 +1519,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_ADD_ENTRY_IN_PROGRESS{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -1570,7 +1570,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1617,7 +1617,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_READ_ENTRY_IN_PROGRESS{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -1668,7 +1668,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1715,7 +1715,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_ADD_ENTRY_BLOCKED{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -1766,7 +1766,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1813,7 +1813,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_READ_ENTRY_BLOCKED{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -1864,7 +1864,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -1911,7 +1911,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.5\"}) by (pod)",
           "format": "time_series",
@@ -1960,7 +1960,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2007,7 +2007,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.99\"}) by (pod)",
           "format": "time_series",
@@ -2056,7 +2056,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2103,7 +2103,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.999\"}) by (pod)",
           "format": "time_series",
@@ -2152,7 +2152,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2199,7 +2199,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_READ_ENTRY_REQUEST{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.5\"}) by (pod)",
           "format": "time_series",
@@ -2248,7 +2248,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2295,7 +2295,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_READ_ENTRY_REQUEST{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.99\"}) by (pod)",
           "format": "time_series",
@@ -2344,7 +2344,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2391,7 +2391,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookkeeper_server_READ_ENTRY_REQUEST{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.999\"}) by (pod)",
           "format": "time_series",
@@ -2466,7 +2466,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2513,7 +2513,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_journal_JOURNAL_SYNC_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m])) by (pod)",
           "format": "time_series",
@@ -2562,7 +2562,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2609,7 +2609,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_journal_JOURNAL_ADD_ENTRY_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m])) by (pod)",
           "format": "time_series",
@@ -2658,7 +2658,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2705,7 +2705,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_QUEUE_SIZE{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -2753,7 +2753,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2800,7 +2800,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_FORCE_WRITE_QUEUE_SIZE{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -2848,7 +2848,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2895,7 +2895,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_journal_JOURNAL_CB_QUEUE_SIZE{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"} [5m])) by (pod)",
           "format": "time_series",
@@ -2943,7 +2943,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -2990,7 +2990,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.5\"}) by (pod)",
           "format": "time_series",
@@ -3039,7 +3039,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3086,7 +3086,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.99\"}) by (pod)",
           "format": "time_series",
@@ -3135,7 +3135,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3182,7 +3182,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"1.0\"}) by (pod)",
           "format": "time_series",
@@ -3231,7 +3231,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3278,7 +3278,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_SYNC{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.5\"}) by (pod)",
           "format": "time_series",
@@ -3327,7 +3327,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3374,7 +3374,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_SYNC{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"0.99\"}) by (pod)",
           "format": "time_series",
@@ -3423,7 +3423,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3470,7 +3470,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_journal_JOURNAL_SYNC{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\", quantile=\"1.0\"}) by (pod)",
           "format": "time_series",
@@ -3545,7 +3545,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3592,7 +3592,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_ledgers_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -3641,7 +3641,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3688,7 +3688,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_entries_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -3737,7 +3737,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3784,7 +3784,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_write_cache_size{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -3833,7 +3833,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3880,7 +3880,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_read_cache_size{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -3929,7 +3929,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -3976,7 +3976,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_read_cache_hits{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -4027,7 +4027,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "decimals": 1,
       "fieldConfig": {
@@ -4074,7 +4074,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_read_cache_misses{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -4123,7 +4123,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -4169,7 +4169,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_DELETED_LEDGER_TOTAL{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -4216,7 +4216,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -4262,7 +4262,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_ledger_writable_dirs{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -4309,7 +4309,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -4355,7 +4355,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_MAJOR_COMPACTION_TOTAL{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -4366,7 +4366,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(bookie_MINOR_COMPACTION_TOTAL{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}) by (pod)",
           "format": "time_series",
@@ -4415,7 +4415,7 @@
       "dashes": false,
       "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
       "fieldConfig": {
         "defaults": {
@@ -4461,7 +4461,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_RECLAIMED_COMPACTION_SPACE_BYTES{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -4472,7 +4472,7 @@
         },
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(irate(bookie_RECLAIMED_DELETION_SPACE_BYTES{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])) by (pod)",
           "format": "time_series",
@@ -4550,7 +4550,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cloud_streamnative_io_cluster=~\".+\"}",
         "hide": 0,
@@ -4581,7 +4581,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "bookkeeper_server_ADD_ENTRY{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\".+\"}",
         "hide": 0,

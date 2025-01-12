@@ -4,7 +4,7 @@
       {
         "builtIn": 1,
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -56,7 +56,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 1,
       "fill": 1,
@@ -98,7 +98,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(process_cpu_seconds_total{kubernetes_pod_name=~\"$kubernetes_pod_name\"}[30s]) * 100\n\n",
           "format": "time_series",
@@ -157,7 +157,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -201,7 +201,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(jvm_memory_bytes_committed{kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
           "format": "time_series",
@@ -216,7 +216,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(jvm_memory_bytes_used{kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
           "format": "time_series",
@@ -230,7 +230,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(jvm_memory_bytes_max{kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
           "format": "time_series",
@@ -280,7 +280,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -321,7 +321,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "jvm_memory_direct_bytes_used{kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -335,7 +335,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "jvm_memory_direct_bytes_max{kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -386,7 +386,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -436,7 +436,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(increase(jvm_gc_collection_seconds_sum{kubernetes_pod_name=~\"$kubernetes_pod_name\"}[30s]))",
           "format": "time_series",
@@ -521,7 +521,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -548,7 +548,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,
@@ -575,7 +575,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,

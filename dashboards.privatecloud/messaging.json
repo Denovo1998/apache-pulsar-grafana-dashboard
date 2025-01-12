@@ -6,7 +6,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -53,7 +53,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -116,7 +116,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_topics_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -132,7 +132,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -195,7 +195,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_producers_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\",  namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -211,7 +211,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -274,7 +274,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_subscriptions_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -290,7 +290,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -353,7 +353,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_consumers_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -369,7 +369,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -432,7 +432,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_size{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -448,7 +448,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -511,7 +511,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_storage_backlog_size{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -527,7 +527,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -590,7 +590,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_msg_backlog{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -636,7 +636,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -684,7 +684,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_rate_in{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) by (cluster, namespace)",
           "format": "time_series",
@@ -735,7 +735,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -782,7 +782,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_rate_out{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) by (cluster, namespace)",
           "format": "time_series",
@@ -832,7 +832,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -872,7 +872,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_throughput_in{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) by (cluster, namespace)",
           "format": "time_series",
@@ -923,7 +923,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "description": "",
       "fill": 1,
@@ -965,7 +965,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_throughput_out{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) by (cluster, namespace)",
           "format": "time_series",
@@ -1016,7 +1016,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 0,
       "fill": 1,
@@ -1057,7 +1057,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_topics_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -1071,7 +1071,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_producers_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -1085,7 +1085,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_subscriptions_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -1098,7 +1098,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_consumers_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
           "format": "time_series",
@@ -1150,7 +1150,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1190,7 +1190,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(pulsar_msg_backlog{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) by (cluster, namespace)",
           "format": "time_series",
@@ -1268,7 +1268,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 5,
           "fillGradient": 0,
@@ -1313,7 +1313,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_0_5{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1327,7 +1327,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_1{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1341,7 +1341,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_5{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1355,7 +1355,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_10{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1369,7 +1369,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_20{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1383,7 +1383,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_50{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1397,7 +1397,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_100{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1412,7 +1412,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_200{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1425,7 +1425,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_le_1000{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1438,7 +1438,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_overflow{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1488,7 +1488,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "fillGradient": 0,
@@ -1528,7 +1528,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_size{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
               "format": "time_series",
@@ -1579,7 +1579,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "description": "Rate of writes into storage (can be lower than publish rate, when batching is enabled)",
           "fill": 1,
@@ -1620,7 +1620,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_write_latency_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
               "format": "time_series",
@@ -1670,7 +1670,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "description": "Reads from bookies",
           "fill": 1,
@@ -1711,7 +1711,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_storage_read_latency_count{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
               "format": "time_series",
@@ -1762,7 +1762,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 6,
           "fillGradient": 0,
@@ -1807,7 +1807,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_128{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1821,7 +1821,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_512{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1835,7 +1835,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_1_kb{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1849,7 +1849,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_2_kb{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1863,7 +1863,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_4_kb{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1877,7 +1877,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_16_kb{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1891,7 +1891,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_100_kb{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1905,7 +1905,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_le_1_mb{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1919,7 +1919,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_entry_size_overflow{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) / 60.0",
               "format": "time_series",
@@ -1996,7 +1996,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2031,7 +2031,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_replication_rate_in{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\", remote_cluster!=\"local\"}) by (cluster, remote_cluster)",
               "format": "time_series",
@@ -2081,7 +2081,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2116,7 +2116,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_replication_rate_out{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"})",
               "format": "time_series",
@@ -2165,7 +2165,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2200,7 +2200,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sum(pulsar_replication_backlog{cloud_streamnative_io_cluster=~\"$cluster\", cloud_streamnative_io_component=~\"broker\", namespace=~\"$namespace\"}) by (cluster, remote_cluster)",
               "format": "time_series",
@@ -2291,7 +2291,7 @@
 
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cloud_streamnative_io_cluster=~\".+\"}",
         "hide": 0,
@@ -2322,7 +2322,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,
