@@ -5,7 +5,7 @@
         "$$hashKey": "object:2894",
         "builtIn": 1,
         "datasource": {
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -33,7 +33,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "gridPos": {
         "h": 1,
@@ -48,7 +48,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "refId": "A"
         }
@@ -59,7 +59,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -137,7 +137,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "((max_over_time(sum(kube_pod_container_resource_requests{namespace=~\"$ns\", resource=\"cpu\",job=\"kube-state-metrics\"} * on (pod) group_left(namespace) kube_pod_labels{namespace=~\"$ns\",label_cloud_streamnative_io_component =~\"(broker|proxy)\",job=\"kube-state-metrics\"}) by (namespace) [1h:]) * 1000) / 2000) > (max_over_time(sum(kube_pod_container_resource_requests{namespace=~\"$ns\", resource=\"memory\",job=\"kube-state-metrics\"} * on (pod) group_left(namespace) kube_pod_labels{namespace=~\"$ns\",label_cloud_streamnative_io_component =~\"(broker|proxy)\",job=\"kube-state-metrics\"}) by (namespace) [1h:]) / 8589934592) or (max_over_time(sum(kube_pod_container_resource_requests{namespace=~\"$ns\", resource=\"memory\",job=\"kube-state-metrics\"} * on (pod) group_left(namespace) kube_pod_labels{namespace=~\"$ns\",label_cloud_streamnative_io_component =~\"(broker|proxy)\",job=\"kube-state-metrics\"}) by (namespace) [1h:]) / 8589934592)",
@@ -154,7 +154,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -232,7 +232,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -250,7 +250,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -328,7 +328,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "((sum_over_time(max_over_time(sum(kube_pod_container_resource_requests{namespace=~\"$ns\", resource=\"cpu\",job=\"kube-state-metrics\"} * on (pod) group_left(namespace) kube_pod_labels{namespace=~\"$ns\",label_cloud_streamnative_io_component =~\"(broker|proxy)\",job=\"kube-state-metrics\"}) by (namespace) [1h:])[23h:1h]) * 1000) / 2000) > (sum_over_time(max_over_time(sum(kube_pod_container_resource_requests{namespace=~\"$ns\", resource=\"memory\",job=\"kube-state-metrics\"} * on (pod) group_left(namespace) kube_pod_labels{namespace=~\"$ns\",label_cloud_streamnative_io_component =~\"(broker|proxy)\",job=\"kube-state-metrics\"}) by (namespace) [1h:])[23h:1h]) / 8589934592) or (sum_over_time(max_over_time(sum(kube_pod_container_resource_requests{namespace=~\"$ns\", resource=\"memory\",job=\"kube-state-metrics\"} * on (pod) group_left(namespace) kube_pod_labels{namespace=~\"$ns\",label_cloud_streamnative_io_component =~\"(broker|proxy)\",job=\"kube-state-metrics\"}) by (namespace) [1h:])[23h:1h]) / 8589934592)",
@@ -345,7 +345,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -423,7 +423,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -474,7 +474,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "label_values(pulsar_version_info,kubernetes_namespace)",
         "description": "The customer's namespace",

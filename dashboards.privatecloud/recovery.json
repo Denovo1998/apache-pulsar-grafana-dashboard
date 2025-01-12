@@ -6,7 +6,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -30,7 +30,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -76,7 +76,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(auditor_NUM_UNDER_REPLICATED_LEDGERS_count{cloud_streamnative_io_cluster=~\"$cluster\", success=\"true\"})",
           "interval": "",
@@ -121,7 +121,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -167,7 +167,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(replication_worker_NUM_BYTES_READ_sum{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m])",
           "interval": "",
@@ -213,7 +213,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -259,7 +259,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(replication_worker_NUM_ENTRIES_READ{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])",
           "interval": "",
@@ -304,7 +304,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -350,7 +350,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(replication_worker_NUM_BYTES_WRITTEN_sum{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\", success=\"true\"}[5m])",
           "interval": "",
@@ -396,7 +396,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -442,7 +442,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(replication_worker_NUM_ENTRIES_WRITTEN{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\"$pod\"}[5m])",
           "interval": "",
@@ -515,7 +515,7 @@
 
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cloud_streamnative_io_cluster=~\".+\"}",
         "hide": 0,
@@ -546,7 +546,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "replication_worker_NUM_BYTES_READ_count{cloud_streamnative_io_cluster=~\"$cluster\", pod=~\".+\"}",
         "hide": 0,

@@ -5,7 +5,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -52,7 +52,7 @@
       "columns": [],
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fontSize": "100%",
       "gridPos": {
@@ -151,7 +151,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "topk(100,count(pulsar_source_received_total) by (fqfn,instance))",
           "format": "table",
@@ -172,7 +172,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -217,7 +217,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "count(pulsar_source_received_total) by (cluster,fqfn)",
           "interval": "",
@@ -288,7 +288,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -333,7 +333,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_source_received_total{cluster=~\"$cluster\",exported_namespace=~\"$namespace\", exported_name=~\"$connector\" }[5m]) )by (cluster, fqfn)",
           "interval": "",
@@ -378,7 +378,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -423,7 +423,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_source_written_total{cluster=~\"$cluster\",exported_namespace=~\"$namespace\", exported_name=~\"$connector\" }[5m]) )by (cluster, fqfn)",
           "interval": "",
@@ -468,7 +468,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -513,7 +513,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_source_source_exceptions_total{cluster=~\"$cluster\",exported_namespace=~\"$namespace\", exported_name=~\"$connector\" }[5m]) )by (cluster, fqfn)",
           "interval": "",
@@ -559,7 +559,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -604,7 +604,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sum(rate(pulsar_source_system_exceptions_total{cluster=~\"$cluster\",exported_namespace=~\"$namespace\", exported_name=~\"$connector\" }[5m]) )by (cluster, fqfn)",
           "interval": "",
@@ -679,7 +679,7 @@
 
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -706,7 +706,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_source_received_total{exported_namespace=~\".+\", cluster=~\"$cluster\"}",
         "hide": 0,
@@ -733,7 +733,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_source_received_total{exported_namespace=~\"$namespace\", cluster=~\"$cluster\"}",
         "hide": 0,

@@ -5,7 +5,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -66,7 +66,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -125,7 +125,7 @@
           "calculatedInterval": "10m",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -146,7 +146,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -209,7 +209,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "count(node_cpu_seconds_total{mode=\"user\", instance=\"$instance\"})",
           "format": "time_series",
@@ -225,7 +225,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -289,7 +289,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "node_memory_MemAvailable_bytes{instance=\"$instance\"}",
           "format": "time_series",
@@ -307,7 +307,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -366,7 +366,7 @@
           "calculatedInterval": "10m",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -391,7 +391,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 2,
       "editable": true,
@@ -442,7 +442,7 @@
           "calculatedInterval": "2s",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -498,7 +498,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 2,
       "editable": true,
@@ -562,7 +562,7 @@
           "calculatedInterval": "10s",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -580,7 +580,7 @@
           "calculatedInterval": "10s",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -598,7 +598,7 @@
           "calculatedInterval": "10s",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -654,7 +654,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "decimals": 2,
       "editable": true,
@@ -718,7 +718,7 @@
           "calculatedInterval": "10s",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -736,7 +736,7 @@
           "calculatedInterval": "10s",
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "datasourceErrors": {},
           "errors": {},
@@ -806,7 +806,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -855,7 +855,7 @@
               "calculatedInterval": "2m",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -911,7 +911,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -964,7 +964,7 @@
               "calculatedInterval": "2m",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -982,7 +982,7 @@
               "calculatedInterval": "2m",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1038,7 +1038,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -1082,7 +1082,7 @@
               "calculatedInterval": "2m",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1138,7 +1138,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -1187,7 +1187,7 @@
               "calculatedInterval": "2m",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1270,7 +1270,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -1330,7 +1330,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1348,7 +1348,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1366,7 +1366,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1422,7 +1422,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -1467,7 +1467,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1485,7 +1485,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1503,7 +1503,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1521,7 +1521,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1604,7 +1604,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -1657,7 +1657,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1675,7 +1675,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1731,7 +1731,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -1775,7 +1775,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1793,7 +1793,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -1849,7 +1849,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -1884,7 +1884,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(node_vmstat_pgmajfault{instance=\"$instance\"}[1m])",
               "format": "time_series",
@@ -1895,7 +1895,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(node_vmstat_pgfault{instance=\"$instance\"}[1m])",
               "format": "time_series",
@@ -1940,7 +1940,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -1975,7 +1975,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(node_vmstat_pgpgin{instance=\"$instance\"}[1m])",
               "format": "time_series",
@@ -1986,7 +1986,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(node_vmstat_pgpgout{instance=\"$instance\"}[1m])",
               "format": "time_series",
@@ -1997,7 +1997,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(node_vmstat_pswpout{instance=\"$instance\"}[1m])",
               "format": "time_series",
@@ -2008,7 +2008,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(node_vmstat_pswpin{instance=\"$instance\"}[1m])",
               "format": "time_series",
@@ -2080,7 +2080,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -2125,7 +2125,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2181,7 +2181,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -2226,7 +2226,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2282,7 +2282,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -2327,7 +2327,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2383,7 +2383,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -2428,7 +2428,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2511,7 +2511,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2546,7 +2546,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_filefd_allocated{instance=\"$instance\"}",
               "format": "time_series",
@@ -2593,7 +2593,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2628,7 +2628,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_filefd_maximum{instance=\"$instance\"}",
               "format": "time_series",
@@ -2702,7 +2702,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -2746,7 +2746,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2764,7 +2764,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2820,7 +2820,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "decimals": 2,
           "editable": true,
@@ -2866,7 +2866,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2885,7 +2885,7 @@
               "calculatedInterval": "2s",
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "datasourceErrors": {},
               "errors": {},
@@ -2943,7 +2943,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "description": "Number of TCP sockets in state inuse.",
           "fill": 1,
@@ -2979,7 +2979,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_sockstat_TCP_inuse{instance=\"$instance\"}",
               "format": "time_series",
@@ -3073,7 +3073,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "hide": 0,
         "includeAll": false,
@@ -3138,7 +3138,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "",
         "hide": 0,

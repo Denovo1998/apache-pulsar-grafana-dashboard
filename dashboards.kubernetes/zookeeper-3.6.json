@@ -5,7 +5,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -57,7 +57,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -102,7 +102,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "znode_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -115,7 +115,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "ephemerals_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -163,7 +163,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -208,7 +208,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(znode_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -221,7 +221,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(ephemerals_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -265,7 +265,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -323,7 +323,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "global_sessions{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -339,7 +339,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -396,7 +396,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "local_sessions{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -415,7 +415,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -456,7 +456,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "write_per_namespace_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -502,7 +502,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -543,7 +543,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "read_per_namespace_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -590,7 +590,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -631,7 +631,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "approximate_data_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -677,7 +677,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -718,7 +718,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "packets_received{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -764,7 +764,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -805,7 +805,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "packets_sent{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -851,7 +851,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -892,7 +892,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "response_packet_cache_misses{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -903,7 +903,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "response_packet_cache_hits{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -914,7 +914,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "response_packet_get_children_cache_misses{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -925,7 +925,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "response_packet_get_children_cache_hits{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -971,7 +971,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1012,7 +1012,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "unrecoverable_error_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -1058,7 +1058,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1099,7 +1099,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "digest_mismatches_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -1145,7 +1145,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1186,7 +1186,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "startup_snap_load_time",
           "format": "time_series",
@@ -1198,7 +1198,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "startup_snap_load_time_count",
           "format": "time_series",
@@ -1210,7 +1210,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "startup_snap_load_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -1256,7 +1256,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1297,7 +1297,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "startup_txns_loaded",
           "format": "time_series",
@@ -1309,7 +1309,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "startup_txns_loaded_count",
           "format": "time_series",
@@ -1321,7 +1321,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "startup_txns_loaded_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -1367,7 +1367,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1408,7 +1408,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "dbinittime",
           "format": "time_series",
@@ -1420,7 +1420,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "dbinittime_count",
           "format": "time_series",
@@ -1432,7 +1432,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "dbinittime_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -1488,7 +1488,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1554,7 +1554,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "max(quorum_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
               "format": "time_series",
@@ -1569,7 +1569,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1631,7 +1631,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "leader_uptime{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -1646,7 +1646,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fieldConfig": {
             "defaults": {
@@ -1708,7 +1708,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "leader_uptime{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -1723,7 +1723,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "gridPos": {
             "h": 8,
@@ -1765,7 +1765,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "max(learners{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
               "format": "time_series",
@@ -1776,7 +1776,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "max(synced_non_voting_followers{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
               "format": "time_series",
@@ -1787,7 +1787,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "max(synced_observers{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
               "format": "time_series",
@@ -1806,7 +1806,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -1844,7 +1844,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "election_time",
               "format": "time_series",
@@ -1856,7 +1856,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "election_time_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -1868,7 +1868,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "election_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -1880,7 +1880,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "election_time_sum/election_time_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -1927,7 +1927,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -1963,7 +1963,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "uptime{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2009,7 +2009,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2045,7 +2045,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "learner_commit_received_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2091,7 +2091,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2127,7 +2127,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "commit_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2173,7 +2173,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2209,7 +2209,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "snap_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2255,7 +2255,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2291,7 +2291,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "diff_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2337,7 +2337,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2373,7 +2373,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "looking_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2419,7 +2419,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2455,7 +2455,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "proposal_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2501,7 +2501,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2537,7 +2537,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "last_proposal_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2548,7 +2548,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "max_proposal_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2559,7 +2559,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "min_proposal_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2605,7 +2605,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2641,7 +2641,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(follower_sync_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])",
               "format": "time_series",
@@ -2687,7 +2687,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2723,7 +2723,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "learner_handler_qp_size_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2769,7 +2769,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2805,7 +2805,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "quit_leading_due_to_disloyal_voter{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -2851,7 +2851,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -2887,7 +2887,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(om_commit_process_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
               "format": "time_series",
@@ -2898,7 +2898,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(om_proposal_process_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
               "format": "time_series",
@@ -2971,7 +2971,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3007,7 +3007,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "watch_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3053,7 +3053,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3089,7 +3089,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_changed_watch_count_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3135,7 +3135,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3171,7 +3171,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_children_watch_count_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3217,7 +3217,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3253,7 +3253,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_deleted_watch_count_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3299,7 +3299,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3335,7 +3335,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "node_created_watch_count_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3381,7 +3381,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3417,7 +3417,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "revalidate_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3463,7 +3463,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3499,7 +3499,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "stale_sessions_expired{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3545,7 +3545,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3581,7 +3581,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "dead_watchers_cleared{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3592,7 +3592,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "dead_watchers_queued{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3603,7 +3603,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(dead_watchers_cleaner_latency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
               "format": "time_series",
@@ -3649,7 +3649,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3685,7 +3685,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "add_dead_watcher_stall_time{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3758,7 +3758,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3794,7 +3794,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "outstanding_requests{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3840,7 +3840,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3876,7 +3876,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "last_client_response_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3887,7 +3887,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "min_client_response_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3898,7 +3898,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "max_client_response_size{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -3944,7 +3944,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -3980,7 +3980,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "bytes_received_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4026,7 +4026,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -4062,7 +4062,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "connection_request_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4108,7 +4108,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -4144,7 +4144,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "num_alive_connections{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4190,7 +4190,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -4226,7 +4226,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "connection_rejected{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4272,7 +4272,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -4308,7 +4308,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "connection_drop_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4354,7 +4354,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 0,
           "gridPos": {
@@ -4390,7 +4390,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "connection_drop_probability{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4436,7 +4436,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -4472,7 +4472,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "sessionless_connections_expired{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
               "format": "time_series",
@@ -4518,7 +4518,7 @@
           "dashes": false,
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "fill": 1,
           "gridPos": {
@@ -4554,7 +4554,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DataSource}"
+                "uid": "Prometheus"
               },
               "expr": "rate(connection_token_deficit_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
               "format": "time_series",
@@ -4635,7 +4635,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -4688,7 +4688,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "open_file_descriptor_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4707,7 +4707,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -4744,7 +4744,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "fsynctime{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4756,7 +4756,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "fsynctime_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4769,7 +4769,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "fsynctime_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4781,7 +4781,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "fsynctime_sum * 1000 /fsynctime_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4793,7 +4793,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "irate(fsynctime_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])",
           "format": "time_series",
@@ -4842,7 +4842,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -4879,7 +4879,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(snapshottime_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -4891,7 +4891,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "snapshottime_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4903,7 +4903,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "snapshottime_sum / snapshottime_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -4976,7 +4976,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5011,7 +5011,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(prep_process_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5057,7 +5057,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5092,7 +5092,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(prep_processor_queue_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5138,7 +5138,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5173,7 +5173,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(prep_processor_queue_size_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5219,7 +5219,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5254,7 +5254,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "prep_processor_request_queued{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -5300,7 +5300,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5335,7 +5335,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "outstanding_changes_queued{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -5346,7 +5346,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "outstanding_changes_removed{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -5392,7 +5392,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5427,7 +5427,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(close_session_prep_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5499,7 +5499,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5534,7 +5534,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(sync_process_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5580,7 +5580,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5615,7 +5615,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(sync_processor_queue_flush_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5661,7 +5661,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5696,7 +5696,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(sync_processor_queue_size_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5742,7 +5742,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 0,
       "gridPos": {
@@ -5777,7 +5777,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "sync_processor_request_queued{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -5823,7 +5823,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5858,7 +5858,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(sync_processor_batch_size_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5930,7 +5930,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -5965,7 +5965,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(commit_process_time_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5976,7 +5976,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(read_commitproc_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -5987,7 +5987,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(write_commitproc_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6033,7 +6033,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6068,7 +6068,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(write_commit_proc_req_queued_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6079,7 +6079,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(read_commit_proc_req_queued_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6090,7 +6090,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(commit_commit_proc_req_queued_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6136,7 +6136,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6171,7 +6171,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(requests_in_session_queue_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6217,7 +6217,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6252,7 +6252,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(read_commit_proc_issued_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6263,7 +6263,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(write_commit_proc_issued_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6309,7 +6309,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6344,7 +6344,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(concurrent_request_processing_in_commit_processor_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6390,7 +6390,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6425,7 +6425,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(time_waiting_empty_pool_in_commit_processor_read_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6472,7 +6472,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6507,7 +6507,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(pending_session_queue_size_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6553,7 +6553,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6588,7 +6588,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(local_write_committed_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6634,7 +6634,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6669,7 +6669,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(server_write_committed_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6715,7 +6715,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6750,7 +6750,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(write_batch_time_in_commit_processor_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6797,7 +6797,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6832,7 +6832,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(reads_after_write_in_session_queue_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6878,7 +6878,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6913,7 +6913,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(session_queues_drained_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -6959,7 +6959,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -6994,7 +6994,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(reads_issued_from_session_queue_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7040,7 +7040,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7075,7 +7075,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "request_commit_queued{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -7147,7 +7147,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7182,7 +7182,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(write_final_proc_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7228,7 +7228,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7263,7 +7263,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(read_final_proc_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7335,7 +7335,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7370,7 +7370,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(readlatency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7416,7 +7416,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7453,7 +7453,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(updatelatency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7499,7 +7499,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7535,7 +7535,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "max_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -7546,7 +7546,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "min_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -7558,7 +7558,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "avg_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -7604,7 +7604,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7639,7 +7639,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(proposal_latency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7685,7 +7685,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7720,7 +7720,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(quorum_ack_latency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7766,7 +7766,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7801,7 +7801,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(ack_latency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7847,7 +7847,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7882,7 +7882,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(propagation_latency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -7928,7 +7928,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -7963,7 +7963,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(commit_propagation_latency_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -8009,7 +8009,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8044,7 +8044,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "proposal_ack_creation_latency{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8116,7 +8116,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8151,7 +8151,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "tls_handshake_exceeded{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8162,7 +8162,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "outstanding_tls_handshake{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8208,7 +8208,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8243,7 +8243,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "ensemble_auth_fail{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8254,7 +8254,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "ensemble_auth_success{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8265,7 +8265,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "ensemble_auth_skip{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8333,7 +8333,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -8395,7 +8395,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "max(jvm_classes_loaded{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
           "format": "time_series",
@@ -8410,7 +8410,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -8472,7 +8472,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "max(jvm_threads_current{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
           "format": "time_series",
@@ -8487,7 +8487,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -8549,7 +8549,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "max(jvm_threads_deadlocked{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"})",
           "format": "time_series",
@@ -8568,7 +8568,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8603,7 +8603,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(jvm_pause_time_ms_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -8649,7 +8649,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8684,7 +8684,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "rate(jvm_gc_collection_seconds_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])",
           "format": "time_series",
@@ -8730,7 +8730,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8765,7 +8765,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "jvm_threads_state{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8811,7 +8811,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fill": 1,
       "gridPos": {
@@ -8846,7 +8846,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "expr": "jvm_memory_pool_bytes_used{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}",
           "format": "time_series",
@@ -8926,7 +8926,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "zookeeper_server_requests{cluster=~\".+\"}",
         "hide": 0,
@@ -8957,7 +8957,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "zookeeper_server_requests{cluster=~\"$cluster\", kubernetes_pod_name=~\".+\"}",
         "hide": 0,

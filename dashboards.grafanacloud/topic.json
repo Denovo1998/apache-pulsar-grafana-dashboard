@@ -6,7 +6,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -25,7 +25,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -109,7 +109,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_rate_in{topic=~\"$topic\"}) by (topic)",
@@ -130,7 +130,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -214,7 +214,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_throughput_in{topic=~\"$topic\"}) by (topic)",
@@ -234,7 +234,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -318,7 +318,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_producers_count{topic=~\"$topic\"})",
@@ -334,7 +334,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_subscriptions_count{})",
@@ -349,7 +349,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_consumers_count{})",
@@ -368,7 +368,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -452,7 +452,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_backlog_size{topic=~\"$topic\"}) by (topic)",
@@ -472,7 +472,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -557,7 +557,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_offloaded_size{topic=~\"$topic\"}) by (topic)",
@@ -577,7 +577,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -660,7 +660,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_0_5{topic=~\"$topic\"}) / 60.0",
@@ -676,7 +676,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_1{topic=~\"$topic\"}) / 60.0",
@@ -692,7 +692,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_5{topic=~\"$topic\"}) / 60.0",
@@ -708,7 +708,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_10{topic=~\"$topic\"}) / 60.0",
@@ -724,7 +724,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_20{topic=~\"$topic\"}) / 60.0",
@@ -740,7 +740,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_50{topic=~\"$topic\"}) / 60.0",
@@ -756,7 +756,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_100{topic=~\"$topic\"}) / 60.0",
@@ -773,7 +773,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_200{topic=~\"$topic\"}) / 60.0",
@@ -788,7 +788,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_le_1000{topic=~\"$topic\"}) / 60.0",
@@ -803,7 +803,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_latency_overflow{topic=~\"$topic\"}) / 60.0",
@@ -823,7 +823,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -906,7 +906,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_128{topic=~\"$topic\"}) / 60.0",
@@ -922,7 +922,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_512{topic=~\"$topic\"}) / 60.0",
@@ -938,7 +938,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_1_kb{topic=~\"$topic\"}) / 60.0",
@@ -954,7 +954,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_2_kb{topic=~\"$topic\"}) / 60.0",
@@ -970,7 +970,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_4_kb{topic=~\"$topic\"}) / 60.0",
@@ -986,7 +986,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_16_kb{topic=~\"$topic\"}) / 60.0",
@@ -1002,7 +1002,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_100_kb{topic=~\"$topic\"}) / 60.0",
@@ -1018,7 +1018,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_le_1_mb{topic=~\"$topic\"}) / 60.0",
@@ -1034,7 +1034,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_entry_size_overflow{topic=~\"$topic\"}) / 60.0",
@@ -1054,7 +1054,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "description": "Rate of writes into storage (can be lower than publish rate, when batching is enabled)",
       "fieldConfig": {
@@ -1138,7 +1138,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_write_rate{topic=~\"$topic\"})",
@@ -1158,7 +1158,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "description": "Reads from bookies",
       "fieldConfig": {
@@ -1242,7 +1242,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(pulsar_storage_read_rate{topic=~\"$topic\"})",

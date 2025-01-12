@@ -5,7 +5,7 @@
         "builtIn": 1,
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "enable": true,
         "hide": true,
@@ -31,7 +31,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -84,7 +84,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_created_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"})",
@@ -100,7 +100,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -152,7 +152,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_active_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"})",
@@ -168,7 +168,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -221,7 +221,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_committed_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"})",
@@ -237,7 +237,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -290,7 +290,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_timeout_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"})",
@@ -306,7 +306,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -358,7 +358,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_aborted_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"})",
@@ -374,7 +374,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -453,7 +453,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "irate(pulsar_txn_created_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}[1m])",
@@ -470,7 +470,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -549,7 +549,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "irate(pulsar_txn_committed_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}[1m])",
@@ -566,7 +566,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -645,7 +645,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "irate(pulsar_txn_aborted_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}[1m])",
@@ -661,7 +661,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -740,7 +740,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "irate(pulsar_txn_timeout_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}[1m])",
@@ -757,7 +757,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -832,7 +832,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "irate(pulsar_txn_append_log_count{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}[1m])",
@@ -849,7 +849,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DataSource}"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -922,7 +922,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_10{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -935,7 +935,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_20{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -948,7 +948,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_50{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -961,7 +961,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_100{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -974,7 +974,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_500{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -987,7 +987,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_1000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1000,7 +1000,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_5000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1013,7 +1013,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_15000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1026,7 +1026,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_30000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1039,7 +1039,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_60000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1052,7 +1052,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_300000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1065,7 +1065,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_1500000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1078,7 +1078,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_1500000{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1091,7 +1091,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DataSource}"
+            "uid": "Prometheus"
           },
           "exemplar": true,
           "expr": "sum(pulsar_txn_execution_latency_le_overflow{cluster=~\"$cluster\", job=~\".*broker\", coordinator_id=~\"$coordinator_id\"}) / 60.0",
@@ -1141,7 +1141,7 @@
 
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_version_info{cluster=~\".+\"}",
         "hide": 0,
@@ -1168,7 +1168,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${DataSource}"
+          "uid": "Prometheus"
         },
         "definition": "pulsar_txn_committed_count{cluster=~\"$cluster\", coordinator_id=~\".+\", }",
         "hide": 0,
