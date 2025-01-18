@@ -169,7 +169,7 @@
             "type": "prometheus",
             "uid": "Prometheus"
           },
-          "expr": "irate(replication_worker_NUM_BYTES_READ_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[1m])",
+          "expr": "irate(replication_worker_NUM_BYTES_READ_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m])",
           "interval": "",
           "legendFormat": "{{ kubernetes_pod_name }}",
           "refId": "A"
@@ -261,7 +261,7 @@
             "type": "prometheus",
             "uid": "Prometheus"
           },
-          "expr": "irate(replication_worker_NUM_ENTRIES_READ{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])",
+          "expr": "irate(replication_worker_NUM_ENTRIES_READ{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])",
           "interval": "",
           "legendFormat": "{{ kubernetes_pod_name }}",
           "refId": "A"
@@ -352,7 +352,7 @@
             "type": "prometheus",
             "uid": "Prometheus"
           },
-          "expr": "irate(replication_worker_NUM_BYTES_WRITTEN_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[1m])",
+          "expr": "irate(replication_worker_NUM_BYTES_WRITTEN_sum{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m])",
           "interval": "",
           "legendFormat": "{{ kubernetes_pod_name }}",
           "refId": "A"
@@ -444,7 +444,7 @@
             "type": "prometheus",
             "uid": "Prometheus"
           },
-          "expr": "irate(replication_worker_NUM_ENTRIES_WRITTEN{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[1m])",
+          "expr": "irate(replication_worker_NUM_ENTRIES_WRITTEN{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])",
           "interval": "",
           "legendFormat": "$cluster",
           "refId": "A"
