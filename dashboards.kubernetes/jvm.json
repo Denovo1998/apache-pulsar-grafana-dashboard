@@ -100,7 +100,7 @@
             "type": "prometheus",
             "uid": "Prometheus"
           },
-          "expr": "irate(process_cpu_seconds_total{kubernetes_pod_name=~\"$kubernetes_pod_name\"}[30s]) * 100\n\n",
+          "expr": "irate(process_cpu_seconds_total{kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m]) * 100\n\n",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -438,7 +438,7 @@
             "type": "prometheus",
             "uid": "Prometheus"
           },
-          "expr": "sum(increase(jvm_gc_collection_seconds_sum{kubernetes_pod_name=~\"$kubernetes_pod_name\"}[30s]))",
+          "expr": "sum(increase(jvm_gc_collection_seconds_sum{kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m]))",
           "format": "time_series",
           "hide": false,
           "interval": "",
