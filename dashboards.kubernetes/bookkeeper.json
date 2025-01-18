@@ -263,7 +263,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "100 * sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m])) / sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m]))",
+          "expr": "100 * sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[5m])) / sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m]))",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -275,7 +275,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "100 * sum(irate(bookkeeper_server_READ_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m])) / sum(irate(bookkeeper_server_READ_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m]))",
+          "expr": "100 * sum(irate(bookkeeper_server_READ_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[5m])) / sum(irate(bookkeeper_server_READ_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m]))",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -603,7 +603,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(rate(bookie_WRITE_BYTES{cluster=~\"$cluster\"}[2m]))",
+          "expr": "sum(rate(bookie_WRITE_BYTES{cluster=~\"$cluster\"}[5m]))",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -615,7 +615,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(rate(bookie_READ_BYTES{cluster=~\"$cluster\"}[2m]))",
+          "expr": "sum(rate(bookie_READ_BYTES{cluster=~\"$cluster\"}[5m]))",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -710,7 +710,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookkeeper_server_READ_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m]))",
+          "expr": "sum(irate(bookkeeper_server_READ_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[5m]))",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -722,7 +722,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m]))",
+          "expr": "sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[5m]))",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1137,7 +1137,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookie_WRITE_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookie_WRITE_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -1233,7 +1233,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookie_READ_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookie_READ_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -1329,7 +1329,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookkeeper_server_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -1425,7 +1425,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookkeeper_server_READ_ENTRY_REQUEST_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookkeeper_server_READ_ENTRY_REQUEST_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -2515,7 +2515,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookie_journal_JOURNAL_SYNC_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookie_journal_JOURNAL_SYNC_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -2611,7 +2611,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookie_journal_JOURNAL_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookie_journal_JOURNAL_ADD_ENTRY_count{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\", success=\"true\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -3978,7 +3978,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookie_read_cache_hits{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookie_read_cache_hits{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -4076,7 +4076,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(irate(bookie_read_cache_misses{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(irate(bookie_read_cache_misses{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -4463,7 +4463,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(rate(bookie_RECLAIMED_COMPACTION_SPACE_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(rate(bookie_RECLAIMED_COMPACTION_SPACE_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -4474,7 +4474,7 @@
           "datasource": {
             "uid": "Prometheus"
           },
-          "expr": "sum(rate(bookie_RECLAIMED_DELETION_SPACE_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[2m])) by (kubernetes_pod_name)",
+          "expr": "sum(rate(bookie_RECLAIMED_DELETION_SPACE_BYTES{cluster=~\"$cluster\", kubernetes_pod_name=~\"$kubernetes_pod_name\"}[5m])) by (kubernetes_pod_name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
